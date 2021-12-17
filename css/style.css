@@ -1,0 +1,74 @@
+/*
+    style.css
+
+    This is the page that will have all the CSS for our project site.
+*/
+
+/* ========================================================= */
+/*  IMPORTS for fonts */
+
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap');
+/* font-family: 'Source Code Pro', monospace; */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/* font-family: 'Roboto', sans-derif; */
+
+/* ========================================================= */
+/*  Page Level Style Rules */
+
+
+/* --------------------------------------------------------- */
+/* body styles */
+
+body {
+    font-family: 'Source Code Pro', sans-serif;
+}
+
+
+h1, h2, h3, h4 {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* --------------------------------------------------------- */
+/*  Container and Spacer Rules */
+
+
+
+/* --------------------------------------------------------- */
+/* Color Rules */
+
+.yellowish {
+    background-color: #FFE9CE;
+}
+
+.light_grey {
+    background-color: #71797E;
+}
+
+.deep_blue {
+    background-color: #003366;
+}
+
+.nav-tabs a {
+    margin-bottom: 0;
+    color: black;
+}
+
+a:hover {
+    background-color: #71797E;
+    color: #000000;
+}
+
+a {
+    color: #71797E;
+}
+/* --------------------------------------------------------- */
+/* Social Media Links */
+
+/* size the social media icons in the footer */
+
+
+/* ========================================================= */
+/* Extending BS Styling Rules */
+
+

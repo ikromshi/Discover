@@ -1,0 +1,661 @@
+
+Bootstrap Snippets  v7.0 -  12.1.21
+
+This is simply a set of starter snippets to be used when initially setting up various BS interactive components.
+
+    1.0   Nav Bar
+    2.0   Grid
+    3.0   Cards
+    4.0   Carousel
+    5.0   Tabs
+    6.0   Collapse/Accordion
+    7.0   Modal
+    8.0   Tooltips
+    9.0   Popovers
+    10.0  Table
+    11.0  Forms
+
+------------------------------------------------------------------
+1.0 Nav Bar
+------------------------------------------------------------------
+
+Resource: https://getbootstrap.com/docs/5.1/components/navbar/
+
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+
+    <div class="container-fluid">
+
+        <a class="navbar-brand" href="#">BRAND</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+
+            <ul class="navbar-nav">
+
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Link 1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link 2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link 3</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link 4</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link 5</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+
+------------------------------------------------------------------
+2.0 Grid
+------------------------------------------------------------------
+
+Resource: https://getbootstrap.com/docs/5.1/layout/grid/
+
+SECTION ONLY
+<!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- Section -->
+<section>
+
+</section>
+<!-- ^^section -->
+
+CONTAINER ONLY
+<!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- Container -->
+<div class="container">
+
+</div>
+<!-- ^^container -->
+
+ROW + COL ONLY
+<!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- Row -->
+<div class="row">
+
+    <div class="col-9 border">
+        <p class="text-center">col-9</p>
+    </div>
+    <!-- ^^col -->
+
+    <div class="col-3 border">
+        <p class="text-center">col-3</p>
+    </div>
+    <!-- ^^col -->
+
+</div>
+<!-- ^^row -->
+
+CONTAINER + ROW + COL
+<!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- Container -->
+<div class="container">
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- Row -->
+    <div class="row">
+
+        <div class="col-9 border">
+            <p class="text-center">col-9</p>
+        </div>
+        <!-- ^^col -->
+
+        <div class="col-3 border">
+            <p class="text-center">col-3</p>
+        </div>
+        <!-- ^^col -->
+
+    </div>
+    <!-- ^^row -->
+
+</div>
+<!-- ^^container -->
+
+<!-- - - - - - - - - - -  - - - - - - - - - - - - - - - - - -  -->
+<!-- Section->Container->Row-->
+
+<section id="SectionX" class="bg-info">
+
+    <div class="container">
+
+        <h2>Section X</h2>
+
+        <!-- - - - - - - - - - -  - - - - - - - - - - - - - - - - - -  -->
+        <!-- row->col-->
+
+        <div class="row">
+            <div class="col-6 border">
+                <p>col-6</p>
+            </div>
+
+            <div class="col-6 border">
+                <p>col-6</p>
+            </div>
+        </div>
+
+    </div>
+    <!--^^container -->
+
+</section>
+<!--^^section -->
+
+------------------------------------------------------------------
+3.0 Cards
+------------------------------------------------------------------
+
+Resource: https://getbootstrap.com/docs/5.1/components/card/
+
+<!-- - - - - - - - - - -  - - - - - - - - - - - - - - - - - -  -->
+<!-- Cards -->
+
+<!-- Card:  header + body with title and text + footer -->
+<div class="card">
+
+    <div class="card-header">
+        Header
+    </div>
+
+    <div class="card-body">
+        <h4 class="card-title">Title</h4>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    </div>
+
+    <div class="card-footer">
+        <small class="text-muted">Footer</small>
+    </div>
+
+</div>
+<!--^^card -->
+
+
+------------------------------------------------------------------
+<!-- Card:  Image Top -->
+<div class="card">
+
+    <img class="card-img-top" src="https://www.fillmurray.com/200/200" alt="Card image cap">
+
+    <div class="card-body">
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    </div>
+
+</div>
+<!--^^card -->
+
+------------------------------------------------------------------
+<!-- Card:  Image Bottom -->
+<div class="card">
+
+    <div class="card-body">
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    </div>
+
+    <img class="card-img-bottom" src="https://www.fillmurray.com/200/200" alt="Card image cap">
+
+</div>
+<!--^^card -->
+
+------------------------------------------------------------------
+<!-- Card:  Image Overlay -->
+<div class="card">
+
+    <img class="card-img" src="https://www.fillmurray.com/200/200" alt="Card image">
+
+    <div class="card-img-overlay">
+
+        <h5 class="card-title">Card title</h5>
+
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+
+        <p class="card-text">Last updated 3 mins ago</p>
+
+    </div>
+
+</div>
+<!--^^card -->
+
+------------------------------------------------------------------
+Widths: https://getbootstrap.com/docs/5.1/utilities/sizing/
+
+<div class="card w-25">
+    ...
+</div>
+<!--^^card -->
+
+------------------------------------------------------------------
+Card Layouts: https://getbootstrap.com/docs/5.1/components/card/#card-layout
+
+<!-- Card:  grid -->
+<div class="container">
+  <div class="row row-cols-4">
+    <div class="col">Card 1</div>
+    <div class="col">Card 2</div>
+    <div class="col">Card 3</div>
+    <div class="col">Card 4</div>
+  </div>
+</div>
+
+<!-- Card:  groups -->
+<div class="card-group">
+</div>
+<!--^^card-group -->
+
+
+------------------------------------------------------------------
+4.0 Carousel
+------------------------------------------------------------------
+
+Resource: https://getbootstrap.com/docs/5.1/components/carousel/
+
+Images: https://placeimg.com/
+
+<!-- ------------------------------------------------- -->
+<!-- Carousel -->
+<div id="carouselOne" class="carousel slide" data-bs-ride="carousel">
+
+    <!-- Indicators -->
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselOne" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselOne" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselOne" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+
+    <!-- Slides -->
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img class="d-block w-100" src="..." alt="First slide">
+        </div>
+        <div class="carousel-item">
+            <img class="d-block w-100" src="..." alt="Second slide">
+        </div>
+        <div class="carousel-item">
+            <img class="d-block w-100" src="..." alt="Third slide">
+        </div>
+    </div>
+
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselOne" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselOne" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+------------------------------------------------------------------
+<!-- Example of a Carousel Item with a Caption -->
+
+<div class="carousel-item">
+
+    <!-- Image -->
+    <img src="..." alt="...">
+
+    <!-- Caption -->
+    <div class="carousel-caption d-none d-md-block">
+        <h3>...Caption Header...</h3>
+        <p>...Caption Text...</p>
+    </div>
+
+</div>
+<!--^^carousel -->
+
+------------------------------------------------------------------
+5.0 Tabs
+------------------------------------------------------------------
+
+Resource: https://getbootstrap.com/docs/5.1/components/navs/#tabs
+
+<!-- - - - - - - - - - -  - - - - - - - - - - - - - - - - - -  -->
+<!-- Nav Tabs -->
+<ul class="nav nav-tabs flex-column flex-lg-row">
+
+    <li class="nav-item mx-1">
+        <a class="nav-link active" data-bs-toggle="tab" href="#tab-1">Tab Number 1</a>
+    </li>
+
+    <li class="nav-item mx-1">
+        <a class="nav-link" data-bs-toggle="tab" href="#tab-2">Tab Number 2</a>
+    </li>
+
+    <li class="nav-item mx-1">
+        <a class="nav-link" data-bs-toggle="tab" href="#tab-3">Tab Number 3</a>
+    </li>
+
+    <li class="nav-item mx-1">
+        <a class="nav-link" data-bs-toggle="tab" href="#tab-4">Tab Number 4</a>
+    </li>
+
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content border border-dark rounded-bottom p-3">
+
+    <div class="tab-pane active" id="tab-1">
+        <p>Tab 1 Content</p>
+    </div>
+
+    <div class="tab-pane fade" id="tab-2">
+        <p>Tab 2 Content</p>
+    </div>
+
+    <div class="tab-pane fade" id="tab-3">
+        <p>Tab 3 Content</p>
+    </div>
+
+    <div class="tab-pane fade" id="tab-4">
+        <p>Tab 4 Content</p>
+    </div>
+
+</div>
+<!-- ^^tab-content -->
+
+------------------------------------------------------------------
+6.0 Accordion
+------------------------------------------------------------------
+
+Resource: https://getbootstrap.com/docs/5.1/components/collapse/#accordion-example
+
+<!-- - - - - - - - - - -  - - - - - - - - - - - - - - - - - -  -->
+<!-- Accordion -->
+
+<div class="accordion" id="accordionExample">
+
+    <!-- - - - - - - - - - - - - - - - - - -->
+    <div class="accordion-item">
+
+        <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Accordion Item #1
+            </button>
+        </h2>
+
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <strong>This is the first item's accordion body.</strong> It is shown by default.
+            </div>
+        </div>
+    </div>
+
+    <!-- - - - - - - - - - - - - - - - - - -->
+    <div class="accordion-item">
+
+        <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Accordion Item #2
+            </button>
+        </h2>
+
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <strong>This is the second item's accordion body.</strong> It is hidden by default.
+            </div>
+        </div>
+    </div>
+
+    <!-- - - - - - - - - - - - - - - - - - -->
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Accordion Item #3
+            </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <strong>This is the third item's accordion body.</strong> It is hidden by default.
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ^^ Accordion -->
+
+
+------------------------------------------------------------------
+7.0 Modal
+------------------------------------------------------------------
+
+Resource: https://getbootstrap.com/docs/5.1/components/modal/
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary mx-auto d-block" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Launch Modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+    <div class="modal-dialog">
+
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body">
+                <p>Modal body:  Additional Content goes here.</p>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<!--^^ Modal -->
+
+------------------------------------------------------------------
+8.0 Tooltips
+------------------------------------------------------------------
+
+Tooltips: https://getbootstrap.com/docs/5.1/components/tooltips/
+
+<!-- - - - - - - - - - -  - - - - - - - - - - - - - - - - - -  -->
+<!-- Tooltip Section -->
+
+NOTES -
+
+Any tag can contain tooltip if you add these attributes to the tag -
+
+data-bs-toggle="tooltip"
+data-bs-placement="top"
+title="Stuff Hipsters Say"
+
+And you can add HTML to the tip if you add this attribute -
+
+data-bs-html="true"
+
+and add some HTML to the title content -
+
+title="Stuff <em>Hipsters</em> Say"
+
+
+EXAMPLES -
+
+<button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">
+  Tooltip on top
+</button>
+
+
+<br><br>
+
+<p data-bs-toggle="tooltip" data-bs-placement="top" title="Stuff Hipsters Say">
+    Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+</p>
+
+<br><br>
+
+<button type="button" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-html="true" title="<em>Tooltip</em> <u>with</u> <b>HTML</b>">
+    Tooltip with HTML
+</button>
+
+<br><br>
+
+<p>
+    Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
+    <em data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true" title="Stuff <em>Hipsters</em> Say">raw denim aesthetic</em>
+    synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+</p>
+
+<br><br>
+
+<p>
+    Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
+    <span data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true" title="Stuff <em>Hipsters</em> Say">
+        raw denim aesthetic
+    </span> synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+</p>
+
+
+------------------------------------------------------------------
+9.0 Popovers
+------------------------------------------------------------------
+
+Popovers: https://getbootstrap.com/docs/5.1/components/popovers/
+
+<!-- - - - - - - - - - -  - - - - - - - - - - - - - - - - - -  -->
+<!-- Popovers Section -->
+
+NOTES -
+
+Any tag can contain a Popover if you add these attributes to the tag -
+
+data-bs-container="body"
+data-bs-toggle="popover"
+data-bs-placement="top"
+data-bs-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
+
+And you can add HTML to the content if you add this attribute -
+
+data-bs-html="true"
+
+and add some HTML to the title content -
+
+data-bs-content="And here's some <em>amazing content</em>. It's very engaging. Right?"
+
+
+EXAMPLES -
+
+<button type="button" class="btn btn-primary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+    Popover - Body
+</button>
+
+<br><br>
+
+<button type="button" class="btn btn-primary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" title="Popover Title" data-bs-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+    Popover - Title + Body
+</button>
+
+<br><br>
+
+<button type="button" class="btn btn-primary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-html="true" title="Popover Title" data-bs-content="<em>Vivamus sagittis lacus vel augue laoreet rutrum faucibus.</em>">
+    Popover w/ HTML
+</button>
+
+<br><br>
+
+<button type="button" class="btn btn-primary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-html="true" title="Meow!" data-bs-content="<img class='img-fluid' src='https://placekitten.com/300/300' alt='Meow'>">
+    Meow
+</button>
+
+
+------------------------------------------------------------------
+10.0 Table
+------------------------------------------------------------------
+
+Resource: https://getbootstrap.com/docs/5.1/content/tables/
+
+<!-- - - - - - - - - - -  - - - - - - - - - - - - - - - - - -  -->
+<!-- Table Section -->
+
+<table class="table table-responsive">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Username</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+        </tr>
+        <tr>
+            <th>2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+        </tr>
+        <tr>
+            <th>3</th>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+        </tr>
+    </tbody>
+</table>
+
+------------------------------------------------------------------
+11.0 Forms
+------------------------------------------------------------------
+
+Resource: https://getbootstrap.com/docs/5.1/components/forms/
+
+<!-- - - - - - - - - - -  - - - - - - - - - - - - - - - - - -  -->
+<!-- Forms Section -->
+
+<form>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+    <div class="form-group">
+        <label for="exampleInputPassword1">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+    </div>
+    <div class="form-check">
+        <label class="form-check-label">
+            <input type="checkbox" class="form-check-input">
+            Check me out
+        </label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+
+<div class="form-check">
+    <label class="form-check-label">
+        <input class="form-check-input" type="checkbox" value="">
+        Option one is this and that&mdash;be sure to include why it's great
+    </label>
+</div>
+<div class="form-check disabled">
+    <label class="form-check-label">
+        <input class="form-check-input" type="checkbox" value="" disabled>
+        Option two is disabled
+    </label>
+</div>
